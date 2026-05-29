@@ -1,0 +1,11 @@
+name: Calls a script
+
+on: workflow_call
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+    - name: run-the-script
+      run: |
+        node ./src/callable-script.js
