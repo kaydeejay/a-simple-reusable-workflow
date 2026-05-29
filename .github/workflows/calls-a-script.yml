@@ -8,6 +8,9 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v6
+      with: 
+        repository: kaydeejay/a-simple-reusable-workflow
+        ref: main
     - name: run-the-script
       run: |
         node ./src/callable-script.js
